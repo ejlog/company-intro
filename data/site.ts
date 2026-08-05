@@ -14,8 +14,10 @@ export const company = {
   brandSub: 'Physical AI',
   footerSub: 'PHYSICAL AI RESEARCH',
   tagline: 'Physical AI',
-  address: '경기도 성남시 분당구 판교로 235, 애드센타워 7F',
-  addressShort: '경기도 성남시 분당구 판교로 235',
+  // 본사 전체 주소. 푸터와 홈 오시는 길에 그대로 표시된다.
+  address: '경남 창원시 성산구 전기의길 10, 113호 (성주동, 한국전기연구원 기술창업센터별동)',
+  // 도로명까지만. JSON-LD streetAddress 처럼 건물 정보가 빠져야 하는 곳에 쓴다.
+  addressShort: '경남 창원시 성산구 전기의길 10, 113호',
   tel: '031-000-0000',
   email: 'contact@addsen.ai',
   hours: '평일 09:00 – 18:00 (점심 12:00 – 13:00)',
@@ -247,7 +249,7 @@ export const corporateProfile = [
   { term: '대표이사', description: '홍길동' },
   { term: '사업 분야', description: '피지컬 AI 연구개발, 로봇 소프트웨어' },
   { term: '임직원', description: '128명 (연구·개발 84명)' },
-  { term: '본사', description: '경기도 성남시 분당구 판교로 235' },
+  { term: '본사', description: company.addressShort },
 ];
 
 export const principles = [

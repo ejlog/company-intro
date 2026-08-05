@@ -159,7 +159,7 @@ export default function HomePage() {
           </div>
           <div className="ph map" data-reveal>
             <div className="ph-lines" aria-hidden="true" />
-            <span className="ph-label">[ MAP ] 판교 본사 약도</span>
+            <span className="ph-label">[ MAP ] 창원 본사 약도</span>
           </div>
         </div>
       </section>

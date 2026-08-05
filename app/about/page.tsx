@@ -21,7 +21,7 @@ export default function AboutPage() {
 
         <div className="ph hero-ph">
           <div className="ph-lines" aria-hidden="true" />
-          <span className="ph-label">[ IMAGE ] 판교 연구소 전경</span>
+          <span className="ph-label">[ IMAGE ] 연구소 전경</span>
         </div>
 
         <div className="three-col ruled-top">

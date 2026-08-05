@@ -251,7 +251,7 @@ export default function robots(): MetadataRoute.Robots {
     address: {
       '@type': 'PostalAddress',
       addressCountry: 'KR',
-      addressRegion: '경기도',
+      addressRegion: '경상남도',
       streetAddress: company.addressShort,
     },
     foundingDate: '2019-03-12',
