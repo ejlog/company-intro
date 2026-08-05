@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>(주)애드센 — Physical AI</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/nocturne.css" />
+<link rel="stylesheet" href="css/site.css" />
+</head>
+<body><header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-name">ADSEN</span>
+      <span class="brand-sub">Physical AI</span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+        <a href="about.html">회사소개</a>
+        <a href="business.html">사업영역</a>
+        <a href="history.html">연혁</a>
+        <a href="news.html">뉴스룸</a>
+        <a href="index.html#contact">오시는 길</a>
+      <span class="nav-lang">KR / EN</span>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="메뉴 열기" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+<main id="top">
+  <section class="hero">
+    <div class="hero-glow" aria-hidden="true"></div>
+    <div class="wrap hero-inner">
+      <p class="kicker hero-kicker">PHYSICAL INTELLIGENCE FOR THE REAL WORLD</p>
+      <h1 class="hero-title">지능을 물리 세계로<br />옮기는 일</h1>
+      <div class="hero-foot">
+        <p class="hero-lead">애드센은 로봇이 스스로 보고, 판단하고, 움직이도록 하는 피지컬 AI를 연구 개발합니다. 파운데이션 모델과 실제 하드웨어를 함께 설계하여 제조, 물류, 인프라 현장의 노동을 자동화합니다.</p>
+        <a class="btn btn-primary" href="about.html">회사 소개 보기</a>
+      </div>
+    </div>
+    <div class="wrap hero-visual-wrap">
+      <div class="hero-visual" id="heroVisual">
+        <img class="ph-img" src="img/hero-main.jpg" alt="부품을 파지한 6축 로봇 매니퓰레이터" />
+      </div>
+    </div>
+  </section>
+
+  <section class="stats">
+    <div class="wrap stats-grid">
+      <div class="stat" data-reveal><div class="stat-v">2019</div><div class="stat-k">설립 연도</div></div>
+      <div class="stat" data-reveal><div class="stat-v">84명</div><div class="stat-k">연구·개발 인력</div></div>
+      <div class="stat" data-reveal><div class="stat-v">31건</div><div class="stat-k">등록 특허</div></div>
+      <div class="stat" data-reveal><div class="stat-v">12개</div><div class="stat-k">산업 현장 도입</div></div>
+    </div>
+  </section>
+
+  <section class="sec" id="about">
+    <div class="wrap sec-grid">
+      <div class="sec-head" data-reveal>
+        <p class="kicker">01 — ABOUT</p>
+        <h2>회사 소개</h2>
+        <p class="sec-sub">Vision &amp; Mission</p>
+      </div>
+      <div>
+        <p class="lead" data-reveal>사람이 하기 어려운 일을 기계가 안전하게 해내는 사회를 만듭니다.</p>
+        <div class="two-col">
+          <div class="card" data-reveal><div class="card-kicker">VISION</div><p class="card-body">모든 기계가 물리 세계를 이해하는 시대. 애드센은 인식과 제어를 하나의 모델로 통합하여, 정해진 동작을 반복하는 자동화가 아닌 상황을 이해하고 판단하는 자율성을 만듭니다.</p></div>
+          <div class="card" data-reveal><div class="card-kicker">MISSION</div><p class="card-body">연구를 현장으로. 논문에 머무르는 기술이 아니라 24시간 가동되는 산업 현장에서 검증된 피지컬 AI를 공급하는 것이 우리의 역할입니다.</p></div>
+        </div>
+        <a class="btn btn-primary mt-lg" data-reveal href="about.html">회사 소개 자세히 보기 →</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="business">
+    <div class="wrap sec-top" data-reveal>
+      <div><p class="kicker">02 — BUSINESS</p><h2>사업 영역</h2></div>
+      <a class="btn btn-ghost" href="business.html">전체 보기 →</a>
+    </div>
+    <div class="wrap biz">
+      <div class="biz-list">
+        <article class="biz-item is-active" data-biz="0">
+          <p class="kicker">FOUNDATION MODEL</p>
+          <h3>로봇 파운데이션 모델</h3>
+          <p class="biz-desc">수천 시간의 조작 데이터로 학습한 범용 제어 모델. 새로운 작업을 소량의 시연만으로 습득합니다.</p>
+          <div class="tags"><span class="tag tag-outline">Imitation Learning</span><span class="tag tag-outline">Sim2Real</span><span class="tag tag-outline">VLA Model</span></div>
+        </article>
+        <article class="biz-item" data-biz="1">
+          <p class="kicker">MANIPULATION</p>
+          <h3>자율 매니퓰레이션</h3>
+          <p class="biz-desc">비정형 물체를 인식하고 파지·조립·검사까지 수행하는 로봇 팔 솔루션입니다.</p>
+          <div class="tags"><span class="tag tag-outline">Force Control</span><span class="tag tag-outline">Bin Picking</span><span class="tag tag-outline">Assembly</span></div>
+        </article>
+        <article class="biz-item" data-biz="2">
+          <p class="kicker">SENSING</p>
+          <h3>센서 퓨전 · 인식</h3>
+          <p class="biz-desc">카메라·라이다·촉각 센서를 통합해 조명과 오염에 강인한 3D 인식을 제공합니다.</p>
+          <div class="tags"><span class="tag tag-outline">3D Perception</span><span class="tag tag-outline">Tactile</span><span class="tag tag-outline">Calibration</span></div>
+        </article>
+        <article class="biz-item" data-biz="3">
+          <p class="kicker">DEPLOYMENT</p>
+          <h3>현장 통합 · 운영</h3>
+          <p class="biz-desc">기존 설비와 MES에 연동되는 통합 설계부터 원격 모니터링, 모델 재학습까지 지원합니다.</p>
+          <div class="tags"><span class="tag tag-outline">MES 연동</span><span class="tag tag-outline">Fleet Ops</span><span class="tag tag-outline">OTA Update</span></div>
+        </article>
+      </div>
+      <div class="biz-stage">
+        <div class="biz-pane is-active" data-pane="0"><img class="ph-img" src="img/biz-01-simulation.jpg" alt="로봇 학습 시뮬레이션 화면" /></div>
+        <div class="biz-pane" data-pane="1"><img class="ph-img" src="img/biz-02-gripper.jpg" alt="금속 부품을 파지하는 2지 그리퍼" /></div>
+        <div class="biz-pane" data-pane="2"><img class="ph-img" src="img/biz-03-perception.jpg" alt="작업대를 스캔한 3D 포인트 클라우드" /></div>
+        <div class="biz-pane" data-pane="3"><div class="ph-lines" aria-hidden="true"></div><span class="ph-label">[ IMAGE ] 제조 라인 설치 현장</span></div>
+        <div class="biz-dots"><span class="biz-dot is-active" data-dot="0"></span><span class="biz-dot" data-dot="1"></span><span class="biz-dot" data-dot="2"></span><span class="biz-dot" data-dot="3"></span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec sec-tint" id="history">
+    <div class="wrap sec-grid">
+      <div class="sec-head sticky" data-reveal>
+        <p class="kicker">03 — HISTORY</p>
+        <h2>연혁</h2>
+        <p class="sec-sub">2019 — 2026</p>
+        <a class="btn btn-primary mt-md" href="history.html">전체 연혁 →</a>
+      </div>
+      <div>
+        <div class="hist-row" data-reveal><div class="hist-y">2026</div><div class="hist-t">피지컬 AI 파운데이션 모델 ADSEN-M2 공개, 국내 완성차 부품사 양산 라인 적용</div></div>
+        <div class="hist-row" data-reveal><div class="hist-y">2024</div><div class="hist-t">시리즈 B 320억 원 투자 유치, 판교 로보틱스 연구소 설립</div></div>
+        <div class="hist-row" data-reveal><div class="hist-y">2022</div><div class="hist-t">자율 매니퓰레이션 솔루션 첫 상용 도입, 등록 특허 10건 돌파</div></div>
+        <div class="hist-row" data-reveal><div class="hist-y">2019</div><div class="hist-t">(주)애드센 설립, 로봇 인식 연구팀 구성</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="news">
+    <div class="wrap sec-top" data-reveal>
+      <div><p class="kicker">04 — NEWSROOM</p><h2>뉴스 · 보도자료</h2></div>
+      <a class="btn btn-ghost" href="news.html">전체 보기 →</a>
+    </div>
+    <div class="wrap news-list">
+      <a class="news-row" data-reveal href="news.html"><span class="news-d">2026.07.28</span><span class="news-t">애드센, 피지컬 AI 모델 ADSEN-M2 공개</span><span class="news-tag">PRESS</span></a>
+      <a class="news-row" data-reveal href="news.html"><span class="news-d">2026.06.11</span><span class="news-t">완성차 부품 양산 라인에 자율 매니퓰레이션 도입</span><span class="news-tag">BUSINESS</span></a>
+      <a class="news-row" data-reveal href="news.html"><span class="news-d">2026.04.02</span><span class="news-t">ICRA 2026 논문 2편 채택</span><span class="news-tag">RESEARCH</span></a>
+      <a class="news-row" data-reveal href="news.html"><span class="news-d">2026.02.19</span><span class="news-t">판교 연구소 확장 이전 완료</span><span class="news-tag">COMPANY</span></a>
+    </div>
+  </section>
+
+  <section class="sec" id="contact">
+    <div class="wrap two-col align-start sec-pad">
+      <div data-reveal>
+        <p class="kicker">05 — CONTACT</p>
+        <h2 class="mb-md">오시는 길</h2>
+        <dl class="deflist">
+          <div class="def"><dt>ADDRESS</dt><dd>경기도 성남시 분당구 판교로 235, 애드센타워 7F</dd></div>
+          <div class="def"><dt>TEL</dt><dd>031-000-0000</dd></div>
+          <div class="def"><dt>EMAIL</dt><dd>contact@adsen.ai</dd></div>
+          <div class="def"><dt>HOURS</dt><dd>평일 09:00 – 18:00 (점심 12:00 – 13:00)</dd></div>
+        </dl>
+      </div>
+      <div class="ph map" data-reveal><div class="ph-lines" aria-hidden="true"></div><span class="ph-label">[ MAP ] 판교 본사 약도</span></div>
+    </div>
+  </section>
+</main>
+<footer class="foot">
+  <div class="wrap foot-top">
+    <div>
+      <div class="brand-name">ADSEN</div>
+      <div class="brand-sub">PHYSICAL AI RESEARCH</div>
+      <p class="foot-addr">경기도 성남시 분당구 판교로 235, 애드센타워 7F<br />T. 031-000-0000 · contact@adsen.ai</p>
+    </div>
+    <div class="foot-cols">
+      <div><span class="foot-h">COMPANY</span><a href="about.html">회사소개</a><a href="history.html">연혁</a><a href="business.html">사업영역</a></div>
+      <div><span class="foot-h">RESOURCES</span><a href="news.html">뉴스룸</a><a href="index.html#contact">오시는 길</a></div>
+    </div>
+  </div>
+  <div class="foot-bot"><div class="wrap">© 2026 ADSEN CO., LTD. ALL RIGHTS RESERVED.</div></div>
+</footer>
+<script src="js/site.js"></script>
+</body>
+</html>
