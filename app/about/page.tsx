@@ -4,7 +4,7 @@ import { corporateProfile, principles } from '@/data/site';
 export const metadata: Metadata = {
   title: '회사 소개',
   description:
-    '애드센(ADSEN)은 2019년 설립된 피지컬 AI 연구개발 기업입니다. 인식·판단·제어를 하나의 학습 시스템으로 통합해, 정형화되지 않은 현장에서도 스스로 작업을 수행하는 로봇 소프트웨어를 만듭니다.',
+    '애드센(ADDSEN)은 2019년 설립된 피지컬 AI 연구개발 기업입니다. 인식·판단·제어를 하나의 학습 시스템으로 통합해, 정형화되지 않은 현장에서도 스스로 작업을 수행하는 로봇 소프트웨어를 만듭니다.',
 };
 
 export default function AboutPage() {
@@ -14,7 +14,7 @@ export default function AboutPage() {
         <p className="kicker">01 — ABOUT</p>
         <h1 className="page-title">회사 소개</h1>
         <p className="page-lead">
-          애드센(ADSEN)은 2019년 설립된 피지컬 AI 연구개발 기업입니다. 인식·판단·제어를 하나의
+          애드센(ADDSEN)은 2019년 설립된 피지컬 AI 연구개발 기업입니다. 인식·판단·제어를 하나의
           학습 시스템으로 통합해, 정형화되지 않은 현장에서도 스스로 작업을 수행하는 로봇
           소프트웨어를 만듭니다.
         </p>

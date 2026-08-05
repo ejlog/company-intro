@@ -1,6 +1,6 @@
 # company-intro
 
-(주)애드센(ADSEN) 기업 소개 사이트. Next.js App Router 정적 export.
+(주)애드센(ADDSEN) 기업 소개 사이트. Next.js App Router 정적 export.
 
 ## 시작하기
 

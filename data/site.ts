@@ -9,17 +9,17 @@
 
 export const company = {
   nameKo: '(주)애드센',
-  nameEn: 'ADSEN Co., Ltd.',
-  brand: 'ADSEN',
+  nameEn: 'ADDSEN Co., Ltd.',
+  brand: 'ADDSEN',
   brandSub: 'Physical AI',
   footerSub: 'PHYSICAL AI RESEARCH',
   tagline: 'Physical AI',
   address: '경기도 성남시 분당구 판교로 235, 애드센타워 7F',
   addressShort: '경기도 성남시 분당구 판교로 235',
   tel: '031-000-0000',
-  email: 'contact@adsen.ai',
+  email: 'contact@addsen.ai',
   hours: '평일 09:00 – 18:00 (점심 12:00 – 13:00)',
-  copyright: '© 2026 ADSEN CO., LTD. ALL RIGHTS RESERVED.',
+  copyright: '© 2026 ADDSEN CO., LTD. ALL RIGHTS RESERVED.',
 } as const;
 
 export type NavItem = { href: string; label: string };
@@ -125,7 +125,7 @@ export const businessAreas: BusinessArea[] = [
 export const historyHighlights = [
   {
     year: '2026',
-    text: '피지컬 AI 파운데이션 모델 ADSEN-M2 공개, 국내 완성차 부품사 양산 라인 적용',
+    text: '피지컬 AI 파운데이션 모델 ADDSEN-M2 공개, 국내 완성차 부품사 양산 라인 적용',
   },
   { year: '2024', text: '시리즈 B 320억 원 투자 유치, 판교 로보틱스 연구소 설립' },
   { year: '2022', text: '자율 매니퓰레이션 솔루션 첫 상용 도입, 등록 특허 10건 돌파' },
@@ -139,7 +139,7 @@ export const historyByYear: HistoryYear[] = [
   {
     year: '2026',
     items: [
-      { month: '05', text: '파운데이션 모델 ADSEN-M2 공개' },
+      { month: '05', text: '파운데이션 모델 ADDSEN-M2 공개' },
       { month: '02', text: '국내 완성차 부품사 양산 라인 적용 계약 체결' },
     ],
   },
@@ -193,10 +193,10 @@ export type NewsItem = {
 
 export const newsItems: NewsItem[] = [
   {
-    slug: 'adsen-m2',
+    slug: 'addsen-m2',
     date: '2026-07-28',
     category: 'PRESS',
-    title: '애드센, 피지컬 AI 모델 ADSEN-M2 공개',
+    title: '애드센, 피지컬 AI 모델 ADDSEN-M2 공개',
     excerpt: '소량 시연만으로 신규 공정을 습득하는 범용 로봇 제어 모델을 발표했습니다.',
   },
   {
@@ -242,7 +242,7 @@ export function formatDate(iso: string): string {
 }
 
 export const corporateProfile = [
-  { term: '회사명', description: '(주)애드센 / ADSEN Co., Ltd.' },
+  { term: '회사명', description: '(주)애드센 / ADDSEN Co., Ltd.' },
   { term: '설립일', description: '2019년 3월 12일' },
   { term: '대표이사', description: '홍길동' },
   { term: '사업 분야', description: '피지컬 AI 연구개발, 로봇 소프트웨어' },
