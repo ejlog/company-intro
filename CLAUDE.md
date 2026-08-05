@@ -154,6 +154,7 @@ git config user.email "ejlogx@gmail.com"
 | `doc/01-roadmap.md` | 무엇을 해야 하는가. 단계별 실행 순서와 완료 조건 |
 | `doc/02-semantics.md` | 어떻게 시멘틱하게 바꿀 것인가. 요소별 before/after |
 | `doc/03-improvements.md` | 무엇을 보완할 것인가. 우선순위별 백로그 |
+| `doc/04-newsroom.md` | 뉴스 DB·URL 자동 수집·썸네일 설계. 호스팅 갈래 결정 전까지 착수 금지 |
 
 작업을 시작하기 전에 해당 문서를 읽는다. 문서의 항목을 끝내면 **문서의 체크박스를 같이 갱신한다** — 문서가 낡으면 없느니만 못하다.
 

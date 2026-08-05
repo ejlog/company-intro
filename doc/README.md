@@ -8,6 +8,7 @@ ADDSEN 사이트의 작업 문서. 셋 다 **읽고 끝나는 문서가 아니�
 | [`01-roadmap.md`](./01-roadmap.md) | 무엇을 진행해야 하는가 | 순서가 있는 단계. 위에서부터 |
 | [`02-semantics.md`](./02-semantics.md) | 어떻게 시멘틱하게 바꿀 수 있는가 | 요소별 before/after. 독립 실행 가능 |
 | [`03-improvements.md`](./03-improvements.md) | 무엇을 보완해야 하는가 | 우선순위 백로그. 골라서 실행 |
+| [`04-newsroom.md`](./04-newsroom.md) | 뉴스를 DB로 옮기고 URL 자동 수집·썸네일을 붙이려면 | 설계 문서. **호스팅 갈래 결정 전까지 착수 금지** |
 
 ## 사용 규칙
 
