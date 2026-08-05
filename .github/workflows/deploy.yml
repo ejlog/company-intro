@@ -1,0 +1,68 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  # Lets the workflow be re-run from the Actions tab without a new commit.
+  workflow_dispatch:
+
+# Read the repo, mint the Pages OIDC token, publish the artifact.
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Never run two deploys at once, but let a queued deploy finish rather than
+# cancelling it — a cancelled deploy can leave Pages on a half-published state.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - run: npm run typecheck
+
+      # Resolves the site's origin and base path from the repo's Pages
+      # settings, so nothing here hardcodes the repository name.
+      - name: Configure Pages
+        id: pages
+        uses: actions/configure-pages@v5
+
+      - name: Build static export
+        # A project site lives at https://<user>.github.io/<repo>, so every
+        # asset URL needs that prefix. `base_path` comes from configure-pages
+        # and is empty when a custom domain (CNAME) is configured.
+        run: npm run build
+        env:
+          NEXT_PUBLIC_BASE_PATH: ${{ steps.pages.outputs.base_path }}
+          NEXT_PUBLIC_SITE_URL: ${{ steps.pages.outputs.origin }}${{ steps.pages.outputs.base_path }}
+
+      - name: Disable Jekyll processing
+        # Without this, Pages' Jekyll pipeline drops the _next/ directory
+        # because underscore-prefixed paths are treated as source, not output.
+        run: touch out/.nojekyll
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: out
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

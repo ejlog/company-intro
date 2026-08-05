@@ -26,6 +26,12 @@ img { display: block; max-width: 100%; }
 .align-start { align-items: start; }
 .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 22px; }
 
+/* Lists used purely as grouping semantics (tag rows, card decks) take their
+   layout from their own class, so the UA list styling is dropped. Only classes
+   that never share an element with .wrap belong here — .wrap owns the gutter
+   padding and a later `padding: 0` would win against it. */
+.tags, .news-grid, .hist-items { list-style: none; margin: 0; padding: 0; }
+
 /* — header — */
 .nav {
   position: sticky; top: 0; z-index: 60;
@@ -121,7 +127,11 @@ img { display: block; max-width: 100%; }
 .lead { font-size: clamp(21px, 2.3vw, 29px); line-height: 1.55; letter-spacing: -.025em; margin: 0 0 48px; max-width: 32ch; text-wrap: pretty; }
 .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
 .three-col { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; }
-.three-col h3 { font-size: 21px; letter-spacing: -.025em; margin: 12px 0 10px; }
+/* Heading level follows document outline, not size — a card heading is an h2
+   when it sits directly under the page h1. Both are matched so the visual
+   scale is decided here rather than by the tag. */
+.three-col h2, .three-col h3 { font-size: 21px; letter-spacing: -.025em; margin: 12px 0 10px; }
+.sub-h { font-size: 21px; letter-spacing: -.025em; }
 
 /* — business sticky stage — */
 .biz { padding-bottom: 120px; display: grid; grid-template-columns: 1fr 1.15fr; gap: 72px; align-items: start; }
@@ -154,7 +164,7 @@ img { display: block; max-width: 100%; }
 .hist-y { font-size: 15px; color: var(--color-accent-400); }
 .hist-t { font-size: 15.5px; line-height: 1.8; color: var(--color-neutral-300); }
 .hist-block { display: grid; grid-template-columns: 160px 1fr; gap: 48px; padding: 36px 0; border-top: 1px solid var(--color-divider); }
-.hist-year { font-size: 28px; letter-spacing: -.03em; color: var(--color-accent-400); }
+.hist-year { font-size: 28px; letter-spacing: -.03em; color: var(--color-accent-400); font-weight: 400; margin: 0; }
 .hist-items { display: grid; gap: 14px; }
 .hist-item { display: grid; grid-template-columns: 56px 1fr; gap: 20px; font-size: 16px; line-height: 1.7; color: var(--color-neutral-200); }
 .hist-m { font-size: 12px; color: var(--color-neutral-600); padding-top: 4px; }
@@ -176,7 +186,10 @@ img { display: block; max-width: 100%; }
 .news-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-md); }
 .news-ph { height: 170px; border-radius: 0; box-shadow: none; padding: 0; }
 .news-body { padding: 22px; display: grid; gap: 11px; }
-.news-body h3 { font-size: 17.5px; letter-spacing: -.025em; line-height: 1.45; margin: 0; }
+/* The <li> is the grid item; stretch the card inside it so a row of cards
+   still shares one height. */
+.news-grid > li { display: grid; }
+.news-body h2, .news-body h3 { font-size: 17.5px; letter-spacing: -.025em; line-height: 1.45; margin: 0; }
 .news-meta { display: flex; justify-content: space-between; font-size: 10px; letter-spacing: .12em; color: var(--color-neutral-600); }
 .news-meta .news-tag { text-align: left; }
 
