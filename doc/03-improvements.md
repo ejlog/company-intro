@@ -265,27 +265,10 @@ export default function robots(): MetadataRoute.Robots {
 
 ---
 
-## 6. 404 페이지가 기본값이다 ⬜
+## 6. 404 페이지 ✅ 완료
 
-`app/not-found.tsx`가 없어 Next 기본 화면이 나온다. 사이트 디자인과 완전히 다르다.
-
-```tsx
-// app/not-found.tsx
-import Link from 'next/link';
-
-export default function NotFound() {
-  return (
-    <main className="page">
-      <div className="wrap">
-        <p className="kicker">404 — NOT FOUND</p>
-        <h1 className="page-title">페이지를 찾을 수 없습니다</h1>
-        <p className="page-lead">주소가 바뀌었거나 삭제된 페이지입니다.</p>
-        <Link className="btn btn-primary mt-lg" href="/">홈으로 돌아가기</Link>
-      </div>
-    </main>
-  );
-}
-```
+`app/not-found.tsx`가 없어 Next 기본 화면이 나오던 문제. 사이트 디자인을 따르는 404로 교체했다.
+`main`에 `id="main"`을 함께 넣어 두었으므로 `02-semantics.md` **B3(스킵 링크)** 적용 시 이 페이지도 바로 대상이 된다.
 
 > GitHub Pages는 `out/404.html`을 자동으로 404 응답에 쓴다. 워크플로에 추가 설정이 필요 없다.
 
@@ -405,7 +388,7 @@ test('모바일 드로어가 열린다', async ({ page }) => {
 | 7 | 스킵 링크 · 포커스 표시 | **P1** | 30분 | — |
 | 2 | 폰트 자체 호스팅 | P1 | 1시간 | — |
 | 3 | favicon / OG 이미지 | P1 | 1시간 | 로고 디자인 |
-| 6 | 404 페이지 | P2 | 20분 | — |
+| 6 | 404 페이지 | ✅ 완료 | — | — |
 | 4 | sitemap / robots | P2 | 20분 | — |
 | 5 | JSON-LD | P2 | 30분 | — |
 | 9 | Playwright 스모크 테스트 | P3 | 2시간 | — |
